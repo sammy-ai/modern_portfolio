@@ -1,0 +1,17 @@
+{
+  "name": "Modern_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "nodesass": "0.0.2-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
