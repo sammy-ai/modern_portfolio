@@ -8,7 +8,7 @@
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
-    margin: auto0 0 5px 0;
+    margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
@@ -17,7 +17,7 @@
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
@@ -42,7 +42,7 @@
     padding: 0;
     background: #373737;
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
@@ -58,12 +58,12 @@
       background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
-  .menu .nac-item {
+  .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
-    .menu .nac-item.show {
+    .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-    .menu .nac-item.current > a {
+    .menu .nav-item.current > a {
       color: #eece1a; }
   .menu .nav-link {
     display: inline-block;

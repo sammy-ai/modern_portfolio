@@ -1,4 +1,4 @@
-//Menu button
+// Menu Button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -10,35 +10,35 @@
   .btn-line {
     width: 28px;
     height: 3px;
-    margin: auto0 0 5px 0;
-    background: set-text-color($primary-color);
+    margin: 0 0 5px 0;
+    background: #fff;
     @include easeOut;
   }
 
-  //Rotate Into X with Menu Lines
+  // Rotate Into X with Menu Lines
   &.close {
     transform: rotate(180deg);
 
     .btn-line {
-      //Line 1 - Rotate
+      // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
 
-      //Line 2 - Hide
+      //Line 2 - Hide:
       &:nth-child(2) {
         opacity: 0;
       }
 
-      //Line 2 - Rotate
-      &:nth-child(2) {
+      //Line 3 - Rotate
+      &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
       }
     }
   }
 }
 
-//Menu Overlay
+// Menu Overlay
 .menu {
   position: fixed;
   top: 0;
@@ -67,23 +67,23 @@
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
-      //Slide in from the top
+      // Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
 
-  //Branding Side
+  // Branding Side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {
-      //Slide in from the bottom
+      // Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
 
@@ -96,7 +96,7 @@
     }
   }
 
-  .nac-item {
+  .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
@@ -117,7 +117,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-color($primary-color);
+    color: #fff;
     text-decoration: none;
     @include easeOut;
 
