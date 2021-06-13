@@ -1,17 +1,26 @@
 {
   "name": "Modern_portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
+    "gh-pages": "^3.2.0",
     "node-sass": "^6.0.0",
     "nodesass": "0.0.2-security"
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammy-ai/modern-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sammy-ai/modern-portfolio/issues"
+  },
+  "homepage": "https://github.com/sammy-ai/modern-portfolio#readme",
+  "description": ""
 }
